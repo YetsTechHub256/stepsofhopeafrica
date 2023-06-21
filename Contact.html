@@ -1,0 +1,240 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <title>Steps of Hope Africa::Rebuilding Hope Together</title>
+  <link rel="icon" href="logo.jpg" type="image/x-icon">
+
+</head>
+<link rel="stylesheet" type="text/css" href="css.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <style>
+   .contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.contact-image {
+  flex: 1;
+  padding: 20px;
+}
+
+.contact-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.contact-form {
+  flex: 1;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #0070ba;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005fa0;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-image,
+  .contact-form {
+    flex: auto;
+    padding: 20px;
+  }
+
+  .contact-image img {
+    max-width: 100%;
+  }
+}
+.contact-description {
+      text-align: center;
+      padding: 20px;
+      background-color: #f5f5f5;
+      color: #555;
+    }
+ </style>
+<body>  
+<nav>
+  <div class="logo">
+    <img src="logo.jpg" alt="Company Logo">
+  </div>
+  <ul class="menu">
+    <li><a href="home.html">Home</a></li>
+    <li><a href="About.html">About Us</a></li>
+    <li class="dropdown">
+      <a href="what.html">what we do</a>
+      <ul class="dropdown-menu">
+        <li><a href="Education.html">Education Support</a>
+        <li><a href="Culture.html">Community OutReach Programs</a></li>
+        <li><a href="Environmental.html">Environmental Conservation</a></li>
+        <li><a href="Health.html">Health Support</a></li>
+        <li><a href="OutReach.html">Career Development</a></li>
+
+      </ul>
+    </li>
+    <li><a href="Contact.html">Contact Us</a></li>
+    <li><a href="Gallery.html">Our Gallery</a></li>
+    <li>
+            <!-- Paste the PayPal button code generated from the PayPal website here -->
+            <form action="https://www.paypal.com/donate" method="post" target="_blank">
+                <input type="hidden" name="hosted_button_id" value="YOUR_BUTTON_ID">
+                <input class="paypal-button" type="submit" value="Donate Now">
+            </form>
+        </li>
+  </ul>
+  </nav> 
+
+<br>
+<center><p style="font-family: Colonna MT; font-size: 50px; margin-left: 20px;">STEPS OF HOPE AFRICA</p></center>
+<br>
+  <br>
+
+
+    <div class="contact-container">
+      <div class="column">
+      <h3>Contact Us</h3>
+      <p>We would love to hear from you. Fill out the form below and we'll get back to you as soon as possible.</p>
+    </div>
+    <div class="contact-image">
+      <img src="Logo.jpg" alt="Contact Image">
+    </div>
+    <div class="contact-form">
+      <h1>Contact Us</h1>
+      <form>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" placeholder="Enter your message" required></textarea>
+        </div>
+        <a class="button" href="mailto:stepsofhopeafrica@gmail.com">Send Email</a>
+
+      </form>
+    </div>
+  </div>
+
+ 
+<script src="script.js">function validateForm() {
+  var name = document.getElementById('name').value;
+  var email = document.getElementById('email').value;
+  var message = document.getElementById('message').value;
+
+  // Simple validation to check if the required fields are filled
+  if (name.trim() === '' || email.trim() === '' || message.trim() === '') {
+    alert('Please fill in all the required fields.');
+    return false;
+  }
+
+  // Add your additional validation logic here if needed
+
+  // If form is valid, proceed with form submission
+  alert('Thank you for contacting Steps of Hope Africa! We will get back to you soon.');
+  return true;
+}
+
+// Event listener for form submission
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent default form submission
+
+  // Call the validateForm function to perform form validation
+  if (validateForm()) {
+    // If form is valid, you can proceed with submitting the form
+    // Here, you can add your code to send the form data to your desired destination (e.g., via AJAX or redirect to another page)
+    document.getElementById('contact-form').reset(); // Optional: Reset the form after successful submission
+  }
+});
+</script>
+
+  
+    <footer>
+  <div class="footer-column">
+    <h3>Contact Us</h3>
+    <p>Telephone: <a href="tel:+256780157449">+256780157449</a></p>
+    <p>Email: <a href="mailto:landsofhopeafrica@gmail.com">stepsofhopeafrica@gmail.com</a></p>
+    <p>Company Location: We are located in Fort Portal tourism city<br> situated in Saaka's Mountains of the Moon university</p>
+  </div>
+  <div class="footer-column">
+    <h3>What We Do</h3>
+      <ul>
+        <li><a href="Education.html">Education Support</a>
+        <li><a href="Culture.html">Community OutReach Programs</a></li>
+        <li><a href="Environmental.html">Environmental Conservation</a></li>
+        <li><a href="OutReach.html">Career Development</a></li>
+      </ul>
+  </div>
+  <div class="footer-column">
+    <h3>Social Links</h3>
+     <ul class="social-icons">
+      <li><a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+      <li><a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="https://www.tiktok.com"><i class="fab fa-tiktok"></i></a></li>
+      <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+    </ul>
+  </div>
+</footer>
+<footer class="developer-footer">
+  <div class="footer-content">
+    <center><p>&copy; 2023 Steps of Hope Africa. All rights reserved.</p></center>
+    <center><p>Designed and developed by <a href="https//www.YetsTechHub.unaux.com">Yets Tech Hub</a></p></center>
+  </div>
+</footer>
+
+
+</body>
+</html>
+
+</body>
+</html>
+

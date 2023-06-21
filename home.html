@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Steps of Hope Africa::Rebuilding Hope Together</title>
+  <link rel="icon" href="logo.jpg" type="image/x-icon">
+
+</head>
+<link rel="stylesheet" type="text/css" href="css.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+    .mySlides {display: none;}
+img {vertical-align: middle;}
+
+img { 
+ display: block;
+  align-items: center;
+border-radius: 30px;}
+
+.active {
+  background-color: #717171;
+
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+  </style>
+<body>
+  
+<nav>
+  <div class="logo">
+    <img src="logo.jpg" alt="Company Logo">
+  </div>
+  <ul class="menu">
+    <li><a href="home.html">Home</a></li>
+    <li><a href="About.html">About Us</a></li>
+    <li class="dropdown">
+      <a href="what.html">what we do</a>
+      <ul class="dropdown-menu">
+        <li><a href="Education.html">Education Support</a>
+        <li><a href="Culture.html">Community OutReach Programs</a></li>
+        <li><a href="Environmental.html">Environmental Conservation</a></li>
+        <li><a href="Health.html">Health Support</a></li>
+        <li><a href="OutReach.html">Career Development</a></li>
+
+      </ul>
+    </li>
+    <li><a href="Contact.html">Contact Us</a></li>
+    <li><a href="Gallery.html">Our Gallery</a></li>
+    <li>
+            <!-- Paste the PayPal button code generated from the PayPal website here -->
+            <form action="https://www.paypal.com/donate" method="post" target="_blank">
+                <input type="hidden" name="hosted_button_id" value="YOUR_BUTTON_ID">
+                <input class="paypal-button" type="submit" value="Donate Now">
+            </form>
+        </li>
+  </ul>
+  </nav> 
+
+<br>
+<center><p style="font-family: Colonna MT; font-size: 50px; margin-left: 20px;">STEPS OF HOPE AFRICA</p></center>
+<br>
+  
+    <center>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="images/image2.jpg" style="width: 70%;" >
+</div>
+
+<div class="mySlides fade">
+  <img src="images/image3.jpg" style="width: 70%;">
+</div>
+<div class="mySlides fade">
+  <img src="images/dan5.jpg" style="width: 70%;">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+</center>
+    <br>
+
+      <div class="welcome-section">
+  <h1>Welcome to Steps of Hope Africa</h1>
+  <p class="slogan">Rebuilding Hope Together</p>
+  <p class="description">Join us in making a difference</p>
+  <a href="About.html" class="cta-button">Learn More</a>
+</div>
+
+
+    <br>
+    <div class="container">
+  <div class="column">
+    <img src="images/image1.jpg" alt="Image 1">
+    <h3>ABOUT US</h3>
+    <p>"Steps of Hope Africa (SOHA) is a charity organization based in Uganda. Our mission is to rebuild hope and create sustainable development opportunities for vulnerable communities in Uganda. Our primary focus areas include education, healthcare, and economic empowerment. With our dedicated team, strategic partnerships, and community-driven approach, we aim to make a significant positive impact on the lives of the underprivileged. Our slogan, "Rebuilding Hope Together," encapsulates our commitment to collaboration and collective action."</p>
+    <br>
+    <a href="what.html" class="button">Learn More</a>
+  </div>
+  <div class="column">
+    <img src="images/image2.jpg" alt="Image 2">
+    <h3>WHAT WE DO</h3>
+   <div class="what-we-do">
+
+  <p>At Steps of Hope Africa, we are dedicated to making a positive impact on our community and the lives of individuals. Through our various programs and initiatives, we strive to address key areas of need and contribute to the overall development and well-being of our society.</p>
+  
+  <h3>Education Support</h3>
+  <p>One of our primary focuses is providing education support to underprivileged children and young adults. We believe that education is a fundamental right and a powerful tool for empowerment. Through scholarships, mentoring programs, and educational resources, we aim to give every child an equal opportunity to succeed.</p>
+  <a href="what.html" class="button">Learn More</a>
+
+  <h3>Community Outreach Programs</h3>
+  <p>We actively engage with our local community through various outreach programs. These initiatives aim to address pressing social issues, promote inclusivity, and foster a sense of unity. From organizing health camps and awareness campaigns to supporting vulnerable groups, we strive to create a positive change at the grassroots level.</p>
+  <a href="what.html" class="button">Learn More</a>
+
+  <h3>Environmental Conservation</h3>
+  <p>Preserving and protecting the environment is a key priority for us. We work towards sustainable practices, raise awareness about environmental issues, and participate in conservation efforts. Through tree planting drives, clean-up campaigns, and eco-friendly initiatives, we aim to create a greener and healthier future for all.</p>
+  <a href="what.html" class="button">Learn More</a>
+
+  <h3>Career Development</h3>
+  <p>We believe in equipping individuals with the skills and resources they need to build successful careers. Our career development programs offer training, workshops, and mentorship opportunities to empower individuals to thrive in their chosen fields. We strive to bridge the gap between education and employment, opening doors to brighter futures.</p>
+  <a href="what.html" class="button">Learn More</a>
+</div>
+
+  </div>
+  <div class="column">
+    <img src="images/image3.jpg" alt="Image 3">
+    <h3>DONATE</h3>
+     <p>Help us make a difference by making a donation today.</p>
+      <a href="https://www.paypal.com/donate?business=YOUR_BUSINESS_EMAIL" class="donate-button">Donate</a>
+  </div>
+</div>
+
+
+    <br>
+    <div class="call-button">
+      <a href="tel:+256780157449"><i class="fas fa-phone"></i>Call Us</a>
+    </div>
+  
+    <div class="whatsapp-button">
+      <a href="https://wa.me/+256780157449"><i class="fab fa-whatsapp"></i>WhatsApp</a>
+    </div>
+    <br>
+  
+    <footer>
+  <div class="footer-column">
+    <h3>Contact Us</h3>
+    <p>Telephone: <a href="tel:+256780157449">+256780157449</a></p>
+    <p>Email: <a href="mailto:landsofhopeafrica@gmail.com">stepsofhopeafrica@gmail.com</a></p>
+    <p>Company Location: We are located in Fort Portal tourism city<br> situated in Saaka's Mountains of the Moon university</p>
+  </div>
+  <div class="footer-column">
+    <h3>What We Do</h3>
+      <ul>
+        <li><a href="Education.html">Education Support</a>
+        <li><a href="Culture.html">Community OutReach Programs</a></li>
+        <li><a href="Environmental.html">Environmental Conservation</a></li>
+        <li><a href="OutReach.html">Career Development</a></li>
+      </ul>
+  </div>
+  <div class="footer-column">
+    <h3>Social Links</h3>
+     <ul class="social-icons">
+      <li><a href="https://www.facebook.com/stepsofhopeafrica"><i class="fab fa-facebook-f"></i></a></li>
+      <li><a href="https://www.twitter.com/stepsofhopeafrica"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="https://www.tiktok.com/@stepsofhopeafrica"><i class="fab fa-tiktok"></i></a></li>
+      <li><a href="https://www.instagram.com/stepsofhopeafrica"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/soha-undefined-8b8388280/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+
+      </ul>
+  </div>
+</footer>
+<footer class="developer-footer">
+  <div class="footer-content">
+    <center><p>&copy; 2023 Steps of Hope Africa. All rights reserved.</p></center>
+    <center><p>Designed and developed by <a href="https//">Yets Tech Hub</a></p></center>
+  </div>
+</footer>
+
+
+</body>
+</html>
+
+</body>
+</html>
