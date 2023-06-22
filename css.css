@@ -229,7 +229,7 @@ footer {
 
 .container {
   display: flex;
-  background-color: #16EE44;
+  background-color: darkgrey;
   border-radius: 100px;
   box-shadow: 10px 10px #919E94;
 }
