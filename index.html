@@ -11,6 +11,67 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <style>
+    .video-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%; /* Set the aspect ratio (16:9) */
+      overflow: hidden;
+    }
+
+    /* CSS styles for the embedded video iframe */
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Responsive styles for different screen sizes */
+    @media (max-width: 768px) {
+      /* Adjust the aspect ratio for smaller screens */
+      .video-container {
+        padding-bottom: 75%; /* Set the aspect ratio (4:3) for smaller screens */
+      }
+    }
+
+    @media (max-width: 480px) {
+      /* Adjust the aspect ratio for even smaller screens */
+      .video-container {
+        padding-bottom: 100%; /* Set the aspect ratio (1:1) for tiny screens */
+      }
+    }
+       /* CSS styles for the embedded video container */
+    .video-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%; /* Set the aspect ratio (16:9) */
+      overflow: hidden;
+    }
+
+    /* CSS styles for the embedded video iframe */
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Responsive styles for different screen sizes */
+    @media (max-width: 768px) {
+      /* Adjust the aspect ratio for smaller screens */
+      .video-container {
+        padding-bottom: 75%; /* Set the aspect ratio (4:3) for smaller screens */
+      }
+    }
+
+    @media (max-width: 480px) {
+      /* Adjust the aspect ratio for even smaller screens */
+      .video-container {
+        padding-bottom: 100%; /* Set the aspect ratio (1:1) for tiny screens */
+      }
+    }
     .mySlides {display: none;}
 img {vertical-align: middle;}
 
@@ -87,7 +148,7 @@ border-radius: 30px;}
   <img src="images/image3.jpg" style="width: 70%;">
 </div>
 <div class="mySlides fade">
-  <img src="images/image1.jpg" style="width: 70%;">
+  <img src="images/dan5.jpg" style="width: 70%;">
 </div>
 
 </div>
@@ -163,8 +224,10 @@ border-radius: 30px;}
       <a href="https://wa.me/+256780157449"><i class="fab fa-whatsapp"></i>WhatsApp</a>
     </div>
     <br>
-  
-    
+      <div class="video-container">
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/GUmLUvUiiW0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <br>
       <footer>
   <div class="footer-column">
     <h3>Contact Us</h3>
