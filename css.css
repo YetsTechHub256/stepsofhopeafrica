@@ -126,7 +126,7 @@ nav {
 }
 
 .paypal-button:hover {
-  background-color: green;
+  background-color: orange;
 }
 
 .paypal-button:hover .paypal-button {
