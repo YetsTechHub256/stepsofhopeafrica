@@ -32,7 +32,7 @@ display: inline;
 
 p.a{
     color:rgb(38, 0, 255)  ;
-font-size: 80px;
+font-size: 40px;
     font-family: Denk One;
     text-align: center;
 
@@ -58,13 +58,13 @@ body { background: #fffefe; }
 .gallery {
   display:grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 0px;
+  grid-gap: 5px;
   max-width: 1000px;
   margin:0px auto;
 }
 
 .gallery img {
-  width: 95%;
+  width: 100%;
   
   padding: 20px;
   border-radius: 30px;
@@ -74,7 +74,7 @@ body { background: #fffefe; }
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 100%) {
   .gallery {
     grid-template-columns: repeat(6, 1fr);
   }
@@ -87,6 +87,25 @@ body { background: #fffefe; }
   
   transition: transform ease 0.5s;
 }
+.paypal-but{
+  background-color: #0070ba;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.paypal-but:hover {
+  background-color: green;
+}
+
+.paypal-but:hover .paypal-but {
+  display: inline-block;
+}
+
 </style>
 </head>
 
@@ -125,53 +144,71 @@ body { background: #fffefe; }
             <p class="a">REBUILDING HOPE TOGETHER </p>
 
         <div class="gallery">
-            <img src="images/dan1.jpg" >
-            <img src="images/dan2.jpg" >
-            <img src="images/dan5.jpg" >
-            <img src="images/f1.jpg" >
-            <img src="images/f2.jpg" >
-            <img src="images/f3.jpg" >
-            <img src="images/oldmama2.jpg" >
-            <img src="images/oldmama3.jpg" >
-            <img src="images/oldmama5.jpg" />
-            <img src="images/staff1.jpg" >
-            <img src="images/staff2.jpg" >
-            <img src="images/prayers4.jpg" >
-           
+            <img src="images/1 (4).jpg" >
+            <img src="images/1 (7).jpg" >
+            <img src="images/1 (9).jpg" >
+            <img src="images/oldmama2.jpeg" >
+            <img src="images/oldmama3.jpeg" >
+            <img src="images/prayers4.jpeg" >
+            <img src="images/oldmama5.jpeg" >
+            <img src="images/staff1.jpeg" >
+            <img src="images/staff2.jpeg" >
+            <img src="images/1 (157).jpg" >
+            <img src="images/5.jpg" >
+            <img src="images/6.jpg" >
+            <img src="images/1 (12).jpg" >
+            <img src="images/1 (13).jpg" >
+            <img src="images/1 (14).jpg" >
+            <img src="images/1 (29).jpg">
+            <img src="images/1 (30).jpg">
+            <img src="images/1 (34).jpg">
+            <img src="images/1 (163).jpg">
+            <img src="images/1 (165).jpg">
+            <img src="images/1 (167).jpg">
           </div>
-           <footer>
+          <br>
+          <br>
+          <div class="paypal-but">
+          <form action="https://www.paypal.com/donate" method="post" target="_blank">
+                <input type="hidden" name="hosted_button_id" value="YOUR_BUTTON_ID">
+                <input class="paypal-button" type="submit" value="VOLUNTEER NOW">
+            </form>  </div>
+            <br>
+            <br>
+            <footer>
   <div class="footer-column">
     <h3>Contact Us</h3>
     <p>Telephone: <a href="tel:+256780157449">+256780157449</a></p>
-    <p>Email: <a href="mailto:landsofhopeafrica@gmail.com">stepsofhopeafrica@gmail.com</a></p>
-    <p>Company Location: We are located in Fort Portal tourism city<br> situated in Saaka's Mountains of the Moon university</p>
+    <p>Email: <a href="mailto:stepsofhopeafrica@gmail.com">stepsofhopeafrica@gmail.com</a></p>
+    <p>Company Location: We are located in Fort Portal tourism city<br> situated in Saaka's Mountains of the Moon University Community</p>
   </div>
   <div class="footer-column">
     <h3>What We Do</h3>
       <ul>
-        <li><a href="#">Education Support</a>
-        <li><a href="#">Art&Craft</a></li>
-        <li><a href="#">Environmental Conservation</a></li>
-        <li><a href="#">Community OutReach Programs</a></li>
+        <li><a href="Education.html">Education Support</a>
+        <li><a href="Culture.html">Community OutReach Programs</a></li>
+        <li><a href="Environmental.html">Environmental Conservation</a></li>
+        <li><a href="Health.html">Health Support</a></li>
+        <li><a href="OutReach.html">Career Development</a></li>
       </ul>
   </div>
   <div class="footer-column">
     <h3>Social Links</h3>
      <ul class="social-icons">
-      <li><a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
-      <li><a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a></li>
-      <li><a href="https://www.tiktok.com"><i class="fab fa-tiktok"></i></a></li>
-      <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
-    </ul>
+      <li><a href="https://www.facebook.com/stepsofhopeafrica"><i class="fab fa-facebook-f"></i></a></li>
+      <li><a href="https://www.twitter.com/stepsofhopeafrica"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="https://www.tiktok.com/@stepsofhopeafrica"><i class="fab fa-tiktok"></i></a></li>
+      <li><a href="https://www.instagram.com/stepsofhopeafrica"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/soha-undefined-8b8388280/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+
+      </ul>
   </div>
 </footer>
 <footer class="developer-footer">
   <div class="footer-content">
     <center><p>&copy; 2023 Steps of Hope Africa. All rights reserved.</p></center>
-    <center><p>Designed and developed by <a href="https//www.YetsTechHub.unaux.com">Yets Tech Hub</a></p></center>
+    <center><p>Designed and developed by <a href="https//www.YetsTechHub256.github.io/yetstechhub/">Yets Tech Hub</a></p></center>
   </div>
 </footer>
-
-
 </body>
 </html>
