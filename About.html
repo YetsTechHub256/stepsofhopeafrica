@@ -11,6 +11,24 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <style>
+  .paypal-but{
+  background-color: #0070ba;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.paypal-but:hover {
+  background-color: green;
+}
+
+.paypal-but:hover .paypal-but {
+  display: inline-block;
+}
   .row {
     display: flex;
     justify-content: center;
@@ -111,6 +129,15 @@ font-size: 20px;
     </div>
   </div>
 </div>
+ <br>
+ <br>
+          <div class="paypal-but">
+          <form action="https://www.paypal.com/donate" method="post" target="_blank">
+                <input type="hidden" name="hosted_button_id" value="YOUR_BUTTON_ID">
+                <input class="paypal-button" type="submit" value="VOLUNTEER NOW">
+            </form>  </div>
+            <br>
+            <br>
 
 <div class="row">
   <div class="us">
