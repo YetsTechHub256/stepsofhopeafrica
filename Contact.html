@@ -133,7 +133,7 @@
   </nav>
 
   <br>
-  <center><p style="font-family: Colonna MT; font-size: 50px; margin-left: 20px;">STEPS OF HOPE AFRICA</p></center>
+  
   <br>
   <br>
 
@@ -164,8 +164,10 @@
       </form>
     </div>
   </div>
+<br>
+  <br>
+  <br>
 
-  <script src="script.js"></script>
 
   <footer>
     <div class="footer-column">
@@ -202,6 +204,39 @@
       <center><p>Designed and developed by <a href="https//www.YetsTechHub256.github.io/yetstechhub/">Yets Tech Hub</a></p></center>
     </div>
   </footer>
+ <script>
+    // Get the form element
+    var contactForm = document.getElementById('contactForm');
 
+    // Add submit event listener to the form
+    contactForm.addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent form submission
+      
+      // Validate form fields
+      var name = document.getElementById('name').value.trim();
+      var email = document.getElementById('email').value.trim();
+      var message = document.getElementById('message').value.trim();
+      
+      if (!name || !email || !message) {
+        alert('Please fill in all fields');
+        return;
+      }
+      
+      // Perform form submission
+      // Replace the following code with your own submission logic
+      // For example, you can use AJAX to send the form data to a server-side script
+      // Here, we simply display an alert with the form data
+      var formData = {
+        name: name,
+        email: email,
+        message: message
+      };
+      
+      alert('Form submitted!\n\n' + JSON.stringify(formData));
+      
+      // Reset the form
+      contactForm.reset();
+    });
+  </script>
 </body>
 </html>
