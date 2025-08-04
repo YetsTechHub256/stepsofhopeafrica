@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
 <head>
   <title>Steps of Hope Africa::Rebuilding Hope Together</title>
@@ -13,21 +12,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
 
-.navbar a {
-display: inline;
-  font-size: 30px;
-  color: rgb(7, 109, 252);
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  border-radius: 15px;
-  font-family:Comfortaa ;
-}
-
-.navbar :hover{
-  background-color:rgb(248, 171, 5);
-  
-}
 
 
 p.a{
@@ -112,37 +96,41 @@ body { background: #fffefe; }
 
 <body bgcolor="white">
   <nav>
-  <div class="logo">
-    <img src="logo.jpg" alt="Company Logo">
-  
-  </div>
-  <ul class="menu">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="About.html">About Us</a></li>
-    <li class="dropdown">
-      <a href="what.html">what we do</a>
-      <ul class="dropdown-menu">
-        <li><a href="Education.html">Education Support</a>
-        <li><a href="OutReach.html">Community OutReach Programs</a></li>
-        <li><a href="Environmental.html">Environmental Conservation</a></li>
-        <li><a href="Health.html">Health Support</a></li>
-        <li><a href="Career.html">Career Development</a></li>
-      </ul>
-    </li>
-    <li><a href="Contact.html">Contact Us</a></li>
-    <li><a href="Gallery.html">Our Gallery</a></li>
-     <li>
-            <!-- Paste the PayPal button code generated from the PayPal website here -->
-            <form action="https://www.paypal.com/donate" method="post" target="_top">
-<input type="hidden" name="hosted_button_id" value="X2ANQ96TVK2J8" />
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-
-</form>
-
-        </li>
-  </ul>
+    <div class="logo">
+      <img src="logo.jpg" alt="Steps of Hope Africa Logo">
+    </div>
+    
+    <!-- Mobile Menu Button -->
+    <button class="mobile-menu-toggle" aria-label="Toggle menu">
+      <i class="fas fa-bars"></i>
+    </button>
+    
+    <ul class="menu">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="About.html">About Us</a></li>
+      <li class="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a href="#" id="services-dropdown">What We Do <i class="fas fa-chevron-down"></i></a>
+        <ul class="dropdown-menu" aria-labelledby="services-dropdown">
+          <li><a href="Education.html">Education Support</a></li>
+          <li><a href="OutReach.html">Community Outreach</a></li>
+          <li><a href="Environmental.html">Environment</a></li>
+          <li><a href="Health.html">Health Support</a></li>
+          <li><a href="Career.html">Career Development</a></li>
+        </ul>
+      </li>
+      <li><a href="Contact.html">Contact Us</a></li>
+      <li><a href="Gallery.html">Gallery</a></li>
+      <li class="donate-btn">
+        <form action="https://www.paypal.com/donate" method="post" target="_top">
+          <input type="hidden" name="hosted_button_id" value="X2ANQ96TVK2J8" />
+          <button type="submit" class="donate-button">
+            <i class="fas fa-heart"></i> Donate Now
+          </button>
+        </form>
+      </li>
+    </ul>
   </nav> 
-
+  
             <p class="a">REBUILDING HOPE TOGETHER </p>
 
         <div class="gallery">
@@ -220,4 +208,5 @@ body { background: #fffefe; }
 </footer>
             
 </body>
+<script src="script.js"></script>
 </html>

@@ -26,32 +26,39 @@
   
 <nav>
   <div class="logo">
-    <img src="logo.jpg" alt="Company Logo">
+    <img src="logo.jpg" alt="Steps of Hope Africa Logo">
   </div>
+  
+  <!-- Mobile Menu Button -->
+  <button class="mobile-menu-toggle" aria-label="Toggle menu">
+    <i class="fas fa-bars"></i>
+  </button>
+  
   <ul class="menu">
     <li><a href="index.html">Home</a></li>
     <li><a href="About.html">About Us</a></li>
-    <li class="dropdown">
-      <a href="#">what we do</a>
-      <ul class="dropdown-menu">
-        <li><a href="Education.html">Education Support</a>
-        <li><a href="OutReach.html">Community OutReach Programs</a></li>
-        <li><a href="Environmental.html">Environmental Conservation</a></li>
+    <li class="dropdown" aria-haspopup="true" aria-expanded="false">
+      <a href="#" id="services-dropdown">What We Do <i class="fas fa-chevron-down"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="services-dropdown">
+        <li><a href="Education.html">Education Support</a></li>
+        <li><a href="OutReach.html">Community Outreach</a></li>
+        <li><a href="Environmental.html">Environment</a></li>
         <li><a href="Health.html">Health Support</a></li>
         <li><a href="Career.html">Career Development</a></li>
-        </ul>
+      </ul>
+    </li>
     <li><a href="Contact.html">Contact Us</a></li>
-    <li><a href="Gallery.html">Our Gallery</a></li>
-    <li>
-      <!-- Paste the PayPal button code generated from the PayPal website here -->
+    <li><a href="Gallery.html">Gallery</a></li>
+    <li class="donate-btn">
       <form action="https://www.paypal.com/donate" method="post" target="_top">
-<input type="hidden" name="hosted_button_id" value="X2ANQ96TVK2J8" />
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-</form>
-  
-</li>
+        <input type="hidden" name="hosted_button_id" value="X2ANQ96TVK2J8" />
+        <button type="submit" class="donate-button">
+          <i class="fas fa-heart"></i> Donate Now
+        </button>
+      </form>
+    </li>
   </ul>
-  </nav> 
+</nav> 
 
 <br>
 <center><p style="font-family: Colonna MT; font-size: 50px; margin-left: 20px;">STEPS OF HOPE AFRICA</p></center>
@@ -114,5 +121,6 @@ km to deliver a message of rebuilding hope together in the region.We focus in th
     <center><p style="color: white; size: 20px;">Designed and developed by <a href="https//www.YetsTechHub256.github.io/yetstechhub/">Yets Tech Hub</a></p></center>
   </div>
 </footer>
+  <script src="script.js"></script>
 </body>
 </html>
