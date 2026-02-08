@@ -1,0 +1,66 @@
+
+:root{
+  --soha-green:#004c00;
+  --soha-black:#0b0f14;
+  --soha-orange:#fd7e14;
+  --soha-muted:#6c757d;
+}
+
+body{ color:var(--soha-black); }
+a{ text-underline-offset: 3px; }
+
+.bg-soha-green{ background:var(--soha-green)!important; }
+.text-soha-green{ color:var(--soha-green)!important; }
+.btn-soha-orange{
+  background:var(--soha-orange)!important;
+  border-color:var(--soha-orange)!important;
+  color:#fff!important;
+}
+.btn-soha-orange:hover{ filter: brightness(0.92); color:#fff!important; }
+
+.brand-tagline{ font-size:.8rem; color:rgba(0,0,0,.55); }
+
+.hero-wrap{
+  background: url("assets/svg/hero.svg") center/cover no-repeat;
+}
+.section-title{ font-weight:800; letter-spacing:-0.02em; }
+
+.card-hover{ transition: transform .15s ease, box-shadow .15s ease; }
+.card-hover:hover{ transform: translateY(-2px); box-shadow: 0 .75rem 1.5rem rgba(0,0,0,.08)!important; }
+
+.badge-soft{ background: rgba(25,135,84,.12); color: var(--soha-green); }
+
+.reveal{ opacity:0; transform: translateY(10px); transition: opacity .6s ease, transform .6s ease; }
+.reveal.show{ opacity:1; transform:none; }
+
+.kpi{ font-size:2.25rem; font-weight:800; color:var(--soha-green); }
+
+.footer-link{ color: rgba(255,255,255,.85); text-decoration:none; }
+.footer-link:hover{ color:#fff; text-decoration:underline; }
+
+.back-to-top{
+  position: fixed; right: 18px; bottom: 18px;
+  width: 44px; height: 44px; border-radius: 999px;
+  display:none; align-items:center; justify-content:center;
+  box-shadow: 0 .75rem 1.5rem rgba(0,0,0,.12);
+  z-index: 1030;
+}
+.back-to-top.show{ display:flex; }
+
+body{ background:#f2f6f2; }
+
+.bg-soha-deep{ background:#004c00!important; }
+.page-banner{ background:#004c00; }
+.page-banner .breadcrumb-item+.breadcrumb-item::before{ color: rgba(255,255,255,.5); }
+.carousel-caption{ background: rgba(0,0,0,.35); border-radius: 1rem; padding: 1rem 1.25rem; }
+
+.section-soft{ background: rgba(0,76,0,.04); }
+
+/* Navbar styling for green background */
+.navbar.bg-soha-green .nav-link{ color: rgba(255,255,255,.85)!important; }
+.navbar.bg-soha-green .nav-link:hover, .navbar.bg-soha-green .nav-link.active{ color: #fff!important; }
+.navbar.bg-soha-green .dropdown-menu{ border: none; box-shadow: 0 .5rem 1rem rgba(0,0,0,.15); }
+
+/* Team member social media links */
+.team-social a{ transition: color 0.2s ease, transform 0.2s ease; }
+.team-social a:hover{ color: var(--soha-green)!important; transform: translateY(-2px); }
